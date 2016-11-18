@@ -8,7 +8,7 @@ import (
 )
 
 func usage() {
-	fmt.Println("Usage: %s <file>", os.Args[0])
+	fmt.Printf("Usage: %s <path>\n", os.Args[0])
 	os.Exit(0)
 }
 
