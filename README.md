@@ -49,6 +49,13 @@ $ git submodule update --init --recursive
 $ sh -c 'cd cmd/karp && go install'
 ```
 
+# BUILD AND ARCHIVE PORTS
+
+```
+$ make build-ports
+$ ls cmd/karp/bin/karp-0.0.1.zip
+```
+
 # LINT
 
 Keep the code tidy:
