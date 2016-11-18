@@ -7,6 +7,8 @@ $ go get github.com/mcandre/karp/...
 
 $ karp karp.gif
 $ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.gif
+$ karp
+Usage: karp <path>
 ```
 
 ![magikarp](https://raw.githubusercontent.com/mcandre/karp/master/karp.gif)
