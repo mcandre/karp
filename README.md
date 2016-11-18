@@ -5,8 +5,10 @@
 ```
 $ karp karp.gif
 ...
+
 $ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.txt
 ...
+
 $ karp
 Usage: karp <path>
 
