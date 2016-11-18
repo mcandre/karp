@@ -6,7 +6,7 @@
 $ go get github.com/mcandre/karp/...
 
 $ karp karp.gif
-$ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.gif
+$ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.txt
 $ karp
 Usage: karp <path>
 ```
