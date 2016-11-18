@@ -6,10 +6,7 @@
 $ go get github.com/mcandre/karp/...
 
 $ karp karp.gif
-...
-
 $ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.gif
-...
 ```
 
 ![magikarp](https://raw.githubusercontent.com/mcandre/karp/master/karp.gif)
@@ -21,7 +18,6 @@ $ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.gif
 `karp` will use the default application registered for a given path's protocol, mimetype, or file extension.
 
 # REQUIREMENTS
-
 * [Go](https://golang.org) 1.7+ with [$GOPATH configured](https://gist.github.com/mcandre/ef73fb77a825bd153b7836ddbd9a6ddc)
 
 ## Optional
