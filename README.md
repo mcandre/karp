@@ -1,15 +1,24 @@
 # karp - universal app launcher
 
-# EXAMPLE
+# EXAMPLES
 
 ```
 $ go get github.com/mcandre/karp/...
+
 $ karp karp.gif
+...
+
+$ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.gif
+...
 ```
+
+![magikarp](https://raw.githubusercontent.com/mcandre/karp/master/karp.gif)
 
 # ABOUT
 
-Operating systems vary on syntax for launching GUI applications from command line interfaces. macOS uses `open`, Linux uses `xdg-open`, and Windows uses `start`. karp provides a small, self-sufficient binary for helping scripts launch graphical applications, in a way that supports a wide variety of different environments.
+`karp` is a cross-operating system binary for easily launching file-based applications, using the skratchdot/open-golang library to route calls to `xdg-open`, etc.
+
+`karp` will use the default application registered for a given path's protocol, mimetype, or file extension.
 
 # REQUIREMENTS
 
