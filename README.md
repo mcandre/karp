@@ -74,3 +74,11 @@ $ make lint
 # GIT HOOKS
 
 See `hooks/`.
+
+# LICENSE
+
+FreeBSD
+
+# CREDIT
+
+Powered by [open-golang](https://github.com/skratchdot/open-golang)
