@@ -63,6 +63,14 @@ $ make build-ports
 $ ls cmd/karp/bin/karp-0.0.1.zip
 ```
 
+# BUILD AND ARCHIVE PORTS
+
+```
+$ make port
+...
+Archived ports in bin/karp-0.0.1.zip
+```
+
 # LINT
 
 Keep the code tidy:
