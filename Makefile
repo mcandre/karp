@@ -19,7 +19,7 @@ goimport:
 lint: govet gofmt goimport
 
 port:
-	sh port.sh karp $(VERSION) bin cmd
+	goport -l $(VERSION)
 
 clean: clean-ports
 

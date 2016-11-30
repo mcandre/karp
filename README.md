@@ -37,6 +37,7 @@ https://github.com/mcandre/karp/releases
 * [Make](https://www.gnu.org/software/make/)
 * [Bash](https://www.gnu.org/software/bash/)
 * [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports) (e.g. `go get golang.org/x/tools/cmd/goimports`)
+* [goport](https://github.com/mcandre/goport) (e.g. `go get github.com/mcandre/goport/...`)
 
 # INSTALL FROM REMOTE GIT REPOSITORY
 
@@ -56,11 +57,10 @@ $ git submodule update --init --recursive
 $ sh -c 'cd cmd/karp && go install'
 ```
 
-# BUILD AND ARCHIVE PORTS
+# PORT
 
 ```
-$ make build-ports
-$ ls cmd/karp/bin/karp-0.0.1.zip
+$ make port
 ```
 
 # BUILD AND ARCHIVE PORTS
