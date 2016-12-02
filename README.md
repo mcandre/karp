@@ -33,10 +33,11 @@ https://github.com/mcandre/karp/releases
 
 ## Optional
 
-* [Git](https://git-scm.com)
-* [Make](https://www.gnu.org/software/make/)
-* [Bash](https://www.gnu.org/software/bash/)
+* [git](https://git-scm.com)
+* [make](https://www.gnu.org/software/make/)
+* [bash](https://www.gnu.org/software/bash/)
 * [findutils](https://www.gnu.org/software/findutils/)
+* [grep](https://www.gnu.org/software/grep/manual/grep.html)
 * [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports) (e.g. `go get golang.org/x/tools/cmd/goimports`)
 * [gox](https://github.com/mitchellh/gox) (e.g. `go get github.com/mitchellh/gox`)
 * [zipc](https://github.com/mcandre/zipc) (e.g. `go get github.com/mcandre/zipc/...`)
