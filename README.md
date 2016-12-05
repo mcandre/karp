@@ -38,6 +38,7 @@ https://github.com/mcandre/karp/releases
 * [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports) (e.g. `go get golang.org/x/tools/cmd/goimports`)
 * [gox](https://github.com/mitchellh/gox) (e.g. `go get github.com/mitchellh/gox`)
 * [zipc](https://github.com/mcandre/zipc) (e.g. `go get github.com/mcandre/zipc/...`)
+* [pargs](https://github.com/mcandre/pargs)
 * [editorconfig-tools](https://www.npmjs.com/package/editorconfig-tools)
 * [bashate](https://github.com/openstack-dev/bashate)
 * [shlint](https://rubygems.org/gems/shlint)
