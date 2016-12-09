@@ -4,20 +4,19 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/mcandre/karp"
 	"github.com/skratchdot/open-golang/open"
 )
 
-const version = "0.0.1"
-
 func usage() {
-	fmt.Printf("Usage: %s <path>\n\n", os.Args[0])
+	fmt.Println("Usage: ", os.Args[0], "<path>")
 	fmt.Println("-v Show version information")
 
 	os.Exit(0)
 }
 
 func versionBanner() {
-	fmt.Printf("%s %s\n", os.Args[0], version)
+	fmt.Println(os.Args[0], karp.Version)
 
 	os.Exit(0)
 }
