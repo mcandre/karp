@@ -19,6 +19,9 @@ gofmt:
 goimport:
 	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec goimports -w {} \;
 
+errcheck:
+	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec errcheck {} \;
+
 bashate:
 	find . \( -wholename '*/.git/*' -o -wholename '*/node_modules*' -o -name '*.bat' \) -prune -o -type f \( -wholename '*/lib/*' -o -wholename '*/hooks/*' -o -name '*.sh' -o -name '*.bashrc*' -o -name '.*profile*' -o -name '*.envrc*' \) -print | xargs bashate
 
@@ -34,7 +37,7 @@ shellcheck:
 editorconfig:
 	sh editorconfig.sh
 
-lint: govet golint gofmt goimport bashate shlint checkbashisms shellcheck editorconfig
+lint: govet golint gofmt goimport errcheck bashate shlint checkbashisms shellcheck editorconfig
 
 port: archive-ports
 

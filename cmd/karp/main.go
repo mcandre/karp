@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 
 	"github.com/mcandre/karp"
@@ -30,5 +31,9 @@ func main() {
 		versionBanner()
 	}
 
-	open.Run(os.Args[1])
+	err := open.Run(os.Args[1])
+
+	if err != nil {
+		log.Panic(err)
+	}
 }
