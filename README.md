@@ -27,6 +27,10 @@ Usage: karp <path>
 
 https://github.com/mcandre/karp/releases
 
+# DOCUMENTATION
+
+https://godoc.org/github.com/mcandre/karp
+
 # DEVELOPMENT REQUIREMENTS
 
 * [Go](https://golang.org) 1.7+ with [$GOPATH configured](https://gist.github.com/mcandre/ef73fb77a825bd153b7836ddbd9a6ddc)
