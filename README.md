@@ -63,7 +63,7 @@ $ go get github.com/mcandre/karp/...
 
 ```
 $ mkdir -p $GOPATH/src/github.com/mcandre
-$ git clone git@github.com:mcandre/karp.git $GOPATH/src/github.com/mcandre/karp
+$ git clone https://github.com/mcandre/karp.git $GOPATH/src/github.com/mcandre/karp
 $ cd $GOPATH/src/github.com/mcandre/karp
 $ git submodule update --init --recursive
 $ sh -c 'cd cmd/karp && go install'
