@@ -2,7 +2,7 @@ VERSION=0.0.1
 
 .PHONY: port clean clean-ports
 
-tall: test
+all: test
 
 test:
 	karp karp.gif
