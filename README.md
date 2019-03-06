@@ -2,7 +2,7 @@
 
 # EXAMPLES
 
-```
+```console
 $ karp karp.gif
 ...
 
@@ -37,7 +37,7 @@ https://godoc.org/github.com/mcandre/karp
 
 # BUILDTIME REQUIREMENTS
 
-* [Go](https://golang.org/) 1.9+
+* [Go](https://golang.org/) 1.11+
 
 ## Recommended
 
