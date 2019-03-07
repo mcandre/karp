@@ -47,12 +47,13 @@ https://godoc.org/github.com/mcandre/karp
 * [golint](https://github.com/golang/lint) (e.g. `go get github.com/golang/lint/golint`)
 * [errcheck](https://github.com/kisielk/errcheck) (e.g. `go get github.com/kisielk/errcheck`)
 * [nakedret](https://github.com/alexkohler/nakedret) (e.g. `go get github.com/alexkohler/nakedret`)
+* [shadow](golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow) (e.g. `go get -u golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow`)
 * [goxcart](https://github.com/mcandre/goxcart) (e.g., `github.com/mcandre/goxcart/...`)
 * [zipc](https://github.com/mcandre/zipc) (e.g. `go get github.com/mcandre/zipc/...`)
 
 # INSTALL FROM REMOTE GIT REPOSITORY
 
-```
+```console
 $ go get github.com/mcandre/karp/...
 ```
 
@@ -60,7 +61,7 @@ $ go get github.com/mcandre/karp/...
 
 # INSTALL FROM LOCAL GIT REPOSITORY
 
-```
+```console
 $ mkdir -p $GOPATH/src/github.com/mcandre
 $ git clone https://github.com/mcandre/karp.git $GOPATH/src/github.com/mcandre/karp
 $ cd $GOPATH/src/github.com/mcandre/karp
@@ -70,7 +71,7 @@ $ sh -c 'cd cmd/karp && go install'
 
 # PORT
 
-```
+```console
 $ mage port
 ```
 
@@ -78,7 +79,7 @@ $ mage port
 
 Keep the code tidy:
 
-```
+```console
 $ mage lint
 ```
 
