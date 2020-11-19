@@ -1,4 +1,3 @@
-// Package main provides a karp executable.
 package main
 
 import (
@@ -7,7 +6,6 @@ import (
 	"os"
 
 	"github.com/mcandre/karp"
-	"github.com/skratchdot/open-golang/open"
 )
 
 // usage prints basic command line interface syntax for this application.
@@ -35,9 +33,7 @@ func main() {
 		versionBanner()
 	}
 
-	err := open.Run(os.Args[1])
-
-	if err != nil {
+	if err := karp.Launch(os.Args[1]); err != nil {
 		log.Panic(err)
 	}
 }
