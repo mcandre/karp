@@ -34,7 +34,7 @@ https://github.com/mcandre/karp/releases
 # INSTALL FROM SOURCE
 
 ```console
-$ go install github.com/mcandre/karp/...@latest
+$ go install github.com/mcandre/karp/cmd/karp@latest
 ```
 
 # LICENSE
