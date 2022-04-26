@@ -8,12 +8,9 @@ $ karp karp.gif
 
 $ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.txt
 ...
-
-$ karp
-Usage: karp <path>
-
--v Show version information
 ```
+
+See `karp -h` for more detail.
 
 ![magikarp](https://raw.githubusercontent.com/mcandre/karp/master/karp.gif)
 

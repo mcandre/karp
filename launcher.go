@@ -4,18 +4,23 @@ package karp
 
 import (
 	"io/ioutil"
+	"os"
 	"os/exec"
 	"regexp"
 )
 
 // linuxLaunch triggers a graphical hook for opening URIs.
 func linuxLaunch(pth string) error {
-	return exec.Command("xdg-open", pth).Run()
+	cmd := exec.Command("xdg-open", pth)
+	cmd.Stderr = os.Stderr
+	return cmd.Run()
 }
 
 // windowsLaunch triggers a graphical hook for opening URIs.
 func windowsLaunch(pth string) error {
-	return exec.Command("powershell.exe", "Start", pth).Run()
+	cmd := exec.Command("powershell.exe", "Start", pth)
+	cmd.Stderr = os.Stderr
+	return cmd.Run()
 }
 
 // brandPattern identifies COMSPEC/WSL environments.

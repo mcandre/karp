@@ -11,13 +11,14 @@ import (
 // usage prints basic command line interface syntax for this application.
 func usage() {
 	fmt.Println("Usage: ", os.Args[0], "<path>")
+	fmt.Println()
+	fmt.Println("-h Show usage information")
 	fmt.Println("-v Show version information")
 }
 
 // versionBanner prints a command line-accessible version number.
 func versionBanner() {
 	fmt.Println(os.Args[0], karp.Version)
-	os.Exit(0)
 }
 
 // main is the entrypoint for this application.
@@ -31,11 +32,17 @@ func main() {
 		os.Exit(1)
 	}
 
-	if os.Args[1] == "-v" || os.Args[1] == "--version" {
+	if os.Args[1] == "-h" {
+		usage()
+		os.Exit(0)
+	}
+
+	if os.Args[1] == "-v" {
 		versionBanner()
+		os.Exit(0)
 	}
 
 	if err := karp.Launch(os.Args[1]); err != nil {
-		log.Panic(err)
+		os.Exit(1)
 	}
 }
