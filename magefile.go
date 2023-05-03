@@ -10,7 +10,7 @@ import (
 
 	"github.com/magefile/mage/mg"
 	"github.com/mcandre/karp"
-	"github.com/mcandre/mage-extras"
+	mageextras "github.com/mcandre/mage-extras"
 )
 
 // artifactsPath describes where artifacts are produced.
@@ -54,7 +54,7 @@ func Nakedret() error { return mageextras.Nakedret("-l", "0") }
 func Staticcheck() error { return mageextras.Staticcheck() }
 
 // Unmake runs unmake.
-func Unmake() error { return exec.Command("unmake", "makefile").Run() }
+func Unmake() error { return mageextras.Unmake(".") }
 
 // Lint runs the lint suite.
 func Lint() error {
