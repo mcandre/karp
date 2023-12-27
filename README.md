@@ -36,7 +36,7 @@ $ go install github.com/mcandre/karp/cmd/karp@latest
 
 # LICENSE
 
-FreeBSD
+BSD-2-Clause
 
 # RUNTIME REQUIREMENTS
 
