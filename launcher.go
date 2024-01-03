@@ -3,7 +3,6 @@
 package karp
 
 import (
-	"io/ioutil"
 	"os"
 	"os/exec"
 	"regexp"
@@ -30,7 +29,7 @@ var brandPattern = regexp.MustCompile("[Mm]icrosoft")
 func Launch(pth string) error {
 	versionPath := "/proc/version"
 
-	versionBytes, err := ioutil.ReadFile(versionPath)
+	versionBytes, err := os.ReadFile(versionPath)
 
 	if err != nil || !brandPattern.Match(versionBytes) {
 		return linuxLaunch(pth)
