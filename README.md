@@ -1,51 +1,12 @@
 # karp - universal app launcher
 
-# EXAMPLES
+Deprecated. Recommended to shim `open` by configuring the relevant shell accordingly.
 
-```console
-$ karp karp.gif
-...
+A few examples are available for some of the ultra common environments:
 
-$ karp https://raw.githubusercontent.com/mcandre/karp/master/karp.txt
-...
-```
+* macOS and other BSD's often include a builtin [open](https://man.freebsd.org/cgi/man.cgi?query=open&sektion=1) command baked into the base operating system.
+* [Linux (X11)](https://github.com/mcandre/dotfiles/blob/master/.profile.d/open.x11.sh)
+* [Windows (cmd.exe)](https://github.com/mcandre/dotfiles/blob/master/open.cmd)
+* [Windows (PowerShell)](https://github.com/mcandre/dotfiles/blob/master/profile.ps1)
 
-See `karp -h` for more detail.
-
-![magikarp](https://raw.githubusercontent.com/mcandre/karp/master/karp.gif)
-
-# ABOUT
-
-`karp` is a cross-operating system binary for easily launching file-based applications, using the skratchdot/open-golang library to route calls to `xdg-open`, etc.
-
-`karp` will use the default application registered for a given path's protocol, mimetype, or file extension.
-
-# DOCUMENTATION
-
-https://godoc.org/github.com/mcandre/karp
-
-# DOWNLOAD
-
-https://github.com/mcandre/karp/releases
-
-# INSTALL FROM SOURCE
-
-```console
-$ go install github.com/mcandre/karp/cmd/karp@latest
-```
-
-# LICENSE
-
-BSD-2-Clause
-
-# RUNTIME REQUIREMENTS
-
-(None)
-
-# CONTRIBUTING
-
-For more information on developing karp itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
-
-# CREDIT
-
-Powered by [open-golang](https://github.com/skratchdot/open-golang)
+More fringe environments like fish, ion, rc, etc. should consult their shell + operating system documentation.
